@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.comment-text-cont {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: auto;
+  margin-bottom: 2%;
+  margin-left: 0%;
+  align-items: center;
+}
+
+.comment-box {
+  width: 400px;
+  margin: auto;
+  margin-left: 15%;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
