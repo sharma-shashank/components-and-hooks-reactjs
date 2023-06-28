@@ -3,15 +3,13 @@ import "./App.css";
 import CommentsText from "./Comments";
 import { comments } from "./Comments-Mock";
 import useStaleRefreshHook from "./StaleRefreshCacheHook";
+import AbortApiController from "./AbortApiController";
 
 export default function App() {
-  console.log(comments);
-  useStaleRefreshHook('https://jsonplaceholder.typicode.com/posts', []);
+  const url = 'https://jsonplaceholder.typicode.com/posts';
+  useStaleRefreshHook(url, []);
   const [updatedComments, setUpdateComments] = useState(comments);
   const [inputValue, setInputValue] = useState('');
-
-  // console.log(data);
-
   const tempComments = useMemo(() => updatedComments,[comments]);
 
   return (
