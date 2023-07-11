@@ -1,0 +1,23 @@
+.main {
+    height: 50vh;
+    background: black;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: auto;
+    width: 100%;
+}
+
+.card-container {
+    flex: 0 0 42%;
+    max-width: 42%;    
+    padding: 0;
+    margin: 16px 8px;
+}
