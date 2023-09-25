@@ -1,0 +1,9 @@
+.file {
+    margin-left: 3px;
+}
+
+.file-cont {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}

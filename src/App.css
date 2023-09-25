@@ -42,7 +42,11 @@
   width: 400px;
   margin: auto;
   margin-left: 15%;
+}
 
+ul, li {
+  list-style: none;
+  padding-left: 0%;
 }
 
 @keyframes App-logo-spin {

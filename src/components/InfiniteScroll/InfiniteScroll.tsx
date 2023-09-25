@@ -14,7 +14,7 @@ const InfiniteScroll = ({ list, setPage }) => {
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
-    }, [list])
+    }, [list]);
 
     return (<>
         <div style={{ margin: 'auto', display: 'flex', justifyContent: 'center',  flexDirection: 'column'}} className="wrapper">
